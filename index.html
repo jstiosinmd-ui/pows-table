@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#240b15">
+  <meta name="description" content="A little collection of our next dates. Dinner, coffee, something sweet, and drinks for Pow and Jon.">
+  <title>Pow's Table · A table for two</title>
+  <link rel="icon" href="assets/monogram.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/cormorant-garamond-500.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the collection</a>
+  <header class="masthead">
+    <a class="brand" href="#collection" data-nav="collection" aria-label="Pow's Table, collection"><span class="monogram" aria-hidden="true">P</span><span>Pow's Table</span></a>
+    <nav class="top-nav" id="top-nav" aria-label="Main navigation">
+      <a href="#collection" data-nav="collection" class="nav-link is-current">The collection</a>
+      <a href="#our-list" data-nav="our-list" class="nav-link">Our list <span class="list-count" hidden>0</span></a>
+      <button class="button brass header-pick" type="button" data-pick>Pick our next date <span data-icon="arrow" aria-hidden="true"></span></button>
+    </nav>
+    <button class="menu-toggle icon-label" id="menu-toggle" aria-expanded="false" aria-controls="top-nav" type="button"><span data-icon="menu" aria-hidden="true"></span><span>Menu</span></button>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="collection-view" aria-label="The collection">
+      <div class="hero" id="intro">
+        <div class="hero-copy">
+          <p class="eyebrow">For Pow and Jon</p>
+          <h1>A table<br> for two.</h1>
+          <p class="dedication">A little collection of our next dates</p>
+          <a class="text-link explore-link" href="#collection-start" id="explore">Explore the collection <span data-icon="arrow" aria-hidden="true"></span></a>
+        </div>
+        <figure class="feature">
+          <a class="feature-photo" href="#place/seva" data-place="seva" aria-label="Take a closer look at Seva">
+            <img src="assets/seva-1200.webp" srcset="assets/seva-600.webp 600w, assets/seva-1200.webp 1200w" sizes="(max-width: 720px) calc(100vw - 40px), 55vw" width="1200" height="800" alt="Warm wood and curved banquette seating at Seva" fetchpriority="high">
+          </a>
+          <figcaption><div><p class="eyebrow">Perhaps, this evening</p><h2><a href="#place/seva" data-place="seva">Seva</a></h2><p>San Juan · Contemporary dining</p></div><a class="text-link" href="#place/seva" data-place="seva">Take a closer look <span data-icon="arrow" aria-hidden="true"></span></a></figcaption>
+        </figure>
+      </div>
+
+      <section class="collection-section" id="collection-start" aria-labelledby="collection-title">
+        <div class="section-heading"><div><p class="eyebrow section-kicker">The places we keep coming back to</p><h2 id="collection-title" tabindex="-1">The collection</h2><p class="section-note">18 places to look forward to</p></div>
+          <label class="search-box" for="search"><span data-icon="search" aria-hidden="true"></span><span class="sr-only">Find a place or a craving</span><input id="search" type="search" placeholder="Find a place or a craving" autocomplete="off" maxlength="160"><button type="button" id="clear-search" aria-label="Clear search" hidden><span data-icon="close" aria-hidden="true"></span></button></label>
+        </div>
+        <div class="filter-bar">
+          <div class="occasion-tabs" aria-label="Choose an occasion">
+            <button type="button" data-occasion="" aria-pressed="true">All places</button>
+            <button type="button" data-occasion="Dinner dates" aria-pressed="false">Dinner dates</button>
+            <button type="button" data-occasion="Coffee and matcha" aria-pressed="false">Coffee and matcha</button>
+            <button type="button" data-occasion="Something sweet" aria-pressed="false">Something sweet</button>
+            <button type="button" data-occasion="Drinks" aria-pressed="false">Drinks</button>
+          </div>
+          <div class="mobile-filter-controls"><label class="sr-only" for="occasion-select">Occasion</label><select id="occasion-select"><option value="">All occasions</option><option>Dinner dates</option><option>Coffee and matcha</option><option>Something sweet</option><option>Drinks</option></select><button type="button" id="filters-toggle" class="button outline" aria-expanded="false" aria-controls="filter-panel">Filters <span data-icon="sliders" aria-hidden="true"></span><span id="filter-number" hidden></span></button></div>
+          <div class="filter-panel" id="filter-panel">
+            <label><span>Location</span><select id="location-filter"><option value="">All areas</option></select></label>
+            <label><span>Cuisine</span><select id="cuisine-filter"><option value="">Every cuisine</option></select></label>
+            <label><span>Menu price</span><select id="budget-filter"><option value="">Any price guide</option><option value="low">Up to PHP500</option><option value="mid">PHP501-1,000</option><option value="high">Over PHP1,000</option><option value="unknown">Prices to verify</option></select></label>
+          </div>
+        </div>
+        <p class="price-help" id="price-help" hidden>Price filters use published menu items, not a bill for two. Delivery prices and current menus may differ.</p>
+        <div class="results-bar"><p id="result-count" aria-live="polite" aria-atomic="true">18 places</p><button type="button" class="quiet-button" id="clear-filters" hidden>Clear filters <span data-icon="close" aria-hidden="true"></span></button><label class="sort-label"><span class="sr-only">Sort places</span><select id="sort"><option value="curated">Our collection</option><option value="name">Name, A to Z</option><option value="area">By area</option></select></label></div>
+        <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
+        <div class="place-grid" id="place-grid"></div>
+        <div class="empty-state" id="no-results" hidden><span class="empty-mark" data-icon="plate" aria-hidden="true"></span><h3>No tables found.</h3><p>Try another area or clear your filters.</p><button class="button brass" type="button" data-reset>Clear filters</button><button class="text-link" type="button" data-reset>Browse all 18 places <span data-icon="arrow" aria-hidden="true"></span></button></div>
+      </section>
+    </section>
+
+    <section id="list-view" class="list-section" hidden aria-labelledby="list-title">
+      <p class="eyebrow">Good things, saved for later</p><h1 id="list-title" tabindex="-1">Our list</h1><p class="section-note">A few places to look forward to. A few memories to keep.</p>
+      <div class="list-tabs" aria-label="Saved list"><button type="button" data-list-tab="want" aria-pressed="true">Want to go <span id="want-count">0</span></button><button type="button" data-list-tab="been" aria-pressed="false">Been here <span id="been-count">0</span></button></div>
+      <p id="list-summary" class="sr-only" aria-live="polite"></p><div id="saved-grid" class="place-grid"></div>
+      <div class="empty-state" id="list-empty"><span class="empty-mark" data-icon="bookmark" aria-hidden="true"></span><h2>Your next date<br>starts here.</h2><p>Save a place from the collection and it will appear on this device.</p><a href="#collection" data-nav="collection" class="button brass">Explore the collection <span data-icon="arrow" aria-hidden="true"></span></a></div>
+      <p id="archived-saves" class="muted" hidden></p>
+      <section class="backup-section" aria-labelledby="backup-heading"><div><h2 id="backup-heading">Keep your list</h2><p>Choices are saved on this device.<br>Keep a backup to bring them to another phone.</p></div><div class="backup-actions"><button class="button outline" type="button" id="export-backup"><span data-icon="upload" aria-hidden="true"></span>Export backup</button><button class="button outline" type="button" id="restore-backup"><span data-icon="download" aria-hidden="true"></span>Restore backup</button><input id="backup-file" type="file" accept=".json,application/json" hidden><p>You'll preview any changes before restoring.</p></div></section>
+    </section>
+    <p id="storage-notice" class="storage-notice" role="status" hidden></p>
+  </main>
+  <footer class="site-footer"><a class="footer-wordmark" href="#collection" data-nav="collection">Pow's Table</a><p>For Pow and Jon, one table at a time.</p><button class="quiet-button" type="button" id="show-credits">Sources and photographs <span data-icon="external" aria-hidden="true"></span></button><small>Collection checked 22 September 2026</small></footer>
+  <nav class="bottom-nav" aria-label="Phone navigation"><a href="#collection" data-nav="collection" class="is-current"><span data-icon="plate" aria-hidden="true"></span><span>Collection</span></a><a href="#our-list" data-nav="our-list"><span data-icon="bookmark" aria-hidden="true"></span><span>Our list</span></a><button type="button" data-pick><span data-icon="spark" aria-hidden="true"></span><span>Pick a date</span></button></nav>
+
+  <dialog id="place-dialog" class="place-dialog" aria-labelledby="place-heading"><div class="dialog-top"><button type="button" class="back-button" id="close-place"><span data-icon="back" aria-hidden="true"></span><span id="back-label">Collection</span></button><button type="button" class="icon-button" id="close-place-icon" aria-label="Close place details"><span data-icon="close" aria-hidden="true"></span></button></div><div id="place-content"></div></dialog>
+  <dialog id="picker-dialog" class="small-dialog" aria-labelledby="picker-title"><div class="dialog-top"><p class="eyebrow">Leave a little to chance</p><button type="button" class="icon-button" data-close="picker-dialog" aria-label="Close date picker"><span data-icon="close" aria-hidden="true"></span></button></div><div class="dialog-body"><h2 id="picker-title">Where shall we go?</h2><label class="picker-select">Choose from<select id="picker-pool"><option value="want">Want to go</option><option value="all">All places</option></select></label><p id="picker-scope" class="muted"></p><div id="picker-result"></div><button type="button" class="button brass full-width" id="pick-again"><span data-icon="spark" aria-hidden="true"></span>Pick another</button></div></dialog>
+  <dialog id="restore-dialog" class="small-dialog" aria-labelledby="restore-title"><div class="dialog-top"><p class="eyebrow">Your list, safely kept</p><button type="button" class="icon-button" data-close="restore-dialog" aria-label="Cancel restore"><span data-icon="close" aria-hidden="true"></span></button></div><div class="dialog-body"><h2 id="restore-title">Restore this list?</h2><p>This will replace the choices on this device.</p><div id="restore-preview"></div><p class="muted">Your current list stays as it is until you confirm. Export a backup first if you want to keep both.</p><div class="dialog-actions"><button type="button" class="button outline" data-close="restore-dialog">Keep my current list</button><button type="button" class="button brass" id="confirm-restore">Restore this list</button></div></div></dialog>
+  <dialog id="credits-dialog" class="small-dialog credits-dialog" aria-labelledby="credits-title"><div class="dialog-top"><p class="eyebrow">The people behind the places</p><button type="button" class="icon-button" data-close="credits-dialog" aria-label="Close sources"><span data-icon="close" aria-hidden="true"></span></button></div><div class="dialog-body"><h2 id="credits-title">Sources and photographs</h2><p>A personal collection from the places Pow sends. Recommendations come from those saved posts and the linked venue sources. Hours and menus can change.</p><div id="credits-list"></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+  <noscript><div class="noscript-note">Turn on JavaScript to browse the collection and keep your list. The app uses local files and saves choices on this device.</div></noscript>
+</body>
+</html>
