@@ -24,6 +24,8 @@ Actual venue or brand photographs are used throughout the app. Covers sometimes 
 | Mad Cajun Seafood Boil | Seafood spread from the restaurant promotional background; image is intentionally darkened | [Mad Cajun official Qashier Treats page](https://treats.app/madcajun) |
 | 201 Brunch and Bistro | Aged ribeye steak photographed by 201 Brunch and Bistro | [201 Brunch and Bistro via DrinkCollectiv](https://www.drinkcollectiv.com/2026/08/14/chef-rosebud-benitez-brings-umami-to-201-brunch-bistro/) |
 | Mono Beef Bar | Beef and bones dish pictured on the official Mono Beef Bar page; exact item not identified | [Mono Beef Bar via The Grid Food Market official website](https://thegridfoodmarket.com/pages/mono-beef-bar) |
+| The Underbelly | Billy’s Rib ramen | [The Underbelly via Philippine Primer](https://primer.com.ph/food/cuisines/japanese/the-underbelly/) |
+| Alto Bar | Bar interior, from its first-look post | [Alto Bar official Instagram](https://www.instagram.com/alto.again/p/Dd8_YspmoQb/) |
 
 ## Reuse status
 

@@ -3,10 +3,10 @@ window.POWS_TABLE = {
   "title": "Pow's Table",
   "dedication": "A little collection of our next dates",
   "stage": "implemented static catalog",
-  "releaseVersion": "1.1",
+  "releaseVersion": "1.6",
   "checkedAt": "2026-09-22",
   "timezone": "Asia/Manila",
-  "placeCount": 18,
+  "placeCount": 20,
   "occasions": [
     "Dinner dates",
     "Coffee and matcha",
@@ -1799,6 +1799,215 @@ window.POWS_TABLE = {
       },
       "instagramUrl": "https://www.instagram.com/monobeefbar/",
       "publicNotes": []
+    },
+    {
+      "id": "underbelly",
+      "name": "The Underbelly",
+      "branch": "The Alley at Karrivin",
+      "city": "Makati",
+      "occasions": [
+        "Dinner dates",
+        "Coffee and matcha"
+      ],
+      "cuisines": [
+        "Japanese",
+        "Ramen"
+      ],
+      "menuChoices": [
+        {
+          "name": "Billy’s Rib",
+          "basis": "Philippine Primer, September 3, 2026",
+          "sourceIds": [
+            "underbelly-primer"
+          ],
+          "note": "Ramen with a bone-in rib. Confirm the current price.",
+          "pricePHP": 680
+        },
+        {
+          "name": "The Anti-Belly",
+          "basis": "Philippine Primer, September 3, 2026",
+          "sourceIds": [
+            "underbelly-primer"
+          ],
+          "note": "Wide noodles with a cold sesame dipping sauce. Confirm the current price.",
+          "pricePHP": 440
+        },
+        {
+          "name": "Belly Dip",
+          "basis": "Philippine Primer, September 3, 2026",
+          "sourceIds": [
+            "underbelly-primer"
+          ],
+          "note": "Tsukemen with pork belly and seafood dipping sauce. Confirm the current price.",
+          "pricePHP": 480
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "+63 995 217 3796",
+          "url": "tel:+639952173796",
+          "sourceIds": [
+            "underbelly-michelin"
+          ],
+          "scope": "venue",
+          "note": "Listed by MICHELIN Guide"
+        },
+        {
+          "kind": "website",
+          "value": "Official Facebook",
+          "url": "https://www.facebook.com/theunderbellyand12/",
+          "sourceIds": [
+            "underbelly-primer"
+          ],
+          "scope": "Facebook",
+          "note": ""
+        }
+      ],
+      "sourceIds": [
+        "underbelly-michelin",
+        "underbelly-primer"
+      ],
+      "visitRecord": false,
+      "visitNote": "Visited together. Visit date has not been added.",
+      "recordedAt": "2026-10-05",
+      "visitDate": null,
+      "dateIdea": "Ramen and tsukemen at Karrivin, with Twelve Labors Coffee in the same space.",
+      "address": {
+        "text": "The Alley at Karrivin, Karrivin Plaza, 2316 Chino Roces Avenue Extension, Makati",
+        "status": "corroborated",
+        "sourceIds": [
+          "underbelly-michelin",
+          "underbelly-primer"
+        ]
+      },
+      "hours": {
+        "text": "Daily 11:00–22:00",
+        "displayRows": [
+          [
+            "Monday–Sunday",
+            "11:00–22:00"
+          ]
+        ],
+        "status": "corroborated",
+        "sourceIds": [
+          "underbelly-michelin",
+          "underbelly-primer"
+        ],
+        "note": "Listed by MICHELIN Guide and Philippine Primer. Confirm holiday changes with the venue.",
+        "sessions": [],
+        "unlistedDaysAreClosed": false,
+        "liveOpenNowEnabled": false,
+        "timezone": "Asia/Manila",
+        "needsConfirmation": false
+      },
+      "image": {
+        "assetId": "underbelly",
+        "caption": "Billy’s Rib ramen",
+        "credit": "The Underbelly via Philippine Primer",
+        "sourcePage": "https://primer.com.ph/food/cuisines/japanese/the-underbelly/",
+        "rights": "Publicly accessible reference photo; redistribution permission not established",
+        "originalFile": ".tmp/20261005-venue-research/underbelly-billys-rib.jpg",
+        "focal": "50% 65%",
+        "src": "assets/underbelly-1200.webp",
+        "small": "assets/underbelly-600.webp"
+      },
+      "priceGuide": "Published menu examples from the September 3, 2026 feature; confirm current prices and availability.",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=The%20Underbelly%20The%20Alley%20at%20Karrivin%2C%20Karrivin%20Plaza%2C%202316%20Chino%20Roces%20Avenue%20Extension%2C%20Makati",
+      "menuUrl": "https://www.instagram.com/the.underbelly.ph/",
+      "bookingUrl": "",
+      "instagramUrl": "https://www.instagram.com/the.underbelly.ph/",
+      "publicNotes": [
+        "Contact the restaurant directly for reservations."
+      ],
+      "checkedAt": "2026-10-05"
+    },
+    {
+      "id": "alto",
+      "name": "Alto Bar",
+      "branch": "The Alley at Karrivin",
+      "city": "Makati",
+      "occasions": [
+        "Drinks"
+      ],
+      "cuisines": [
+        "Cocktails",
+        "Bar"
+      ],
+      "menuChoices": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "+63 963 538 7161",
+          "url": "tel:+639635387161",
+          "sourceIds": [
+            "alto-bar-maps"
+          ],
+          "scope": "venue",
+          "note": "Listed on Google"
+        }
+      ],
+      "sourceIds": [
+        "alto-bar-instagram",
+        "alto-bar-maps"
+      ],
+      "visitRecord": false,
+      "visitNote": "Visited together. Visit date has not been added.",
+      "recordedAt": "2026-10-05",
+      "visitDate": null,
+      "dateIdea": "An evening at Alto’s intimate bar inside The Alley at Karrivin.",
+      "address": {
+        "text": "The Alley at Karrivin, Karrivin Plaza, 2316 Chino Roces Avenue Extension, Makati",
+        "status": "listed",
+        "sourceIds": [
+          "alto-bar-maps"
+        ]
+      },
+      "hours": {
+        "text": "Tuesday–Sunday 17:00–01:00; Monday closed.",
+        "displayRows": [
+          [
+            "Monday",
+            "Closed"
+          ],
+          [
+            "Tuesday–Sunday",
+            "17:00–01:00"
+          ]
+        ],
+        "status": "official",
+        "sourceIds": [
+          "alto-bar-instagram",
+          "alto-bar-maps"
+        ],
+        "note": "Closes at 01:00 the following day. Soft-opening schedule; check the venue’s latest announcements.",
+        "sessions": [],
+        "unlistedDaysAreClosed": true,
+        "liveOpenNowEnabled": false,
+        "timezone": "Asia/Manila",
+        "needsConfirmation": false
+      },
+      "image": {
+        "assetId": "alto",
+        "caption": "Alto’s bar interior, from its first-look post",
+        "credit": "Alto Bar official Instagram",
+        "sourcePage": "https://www.instagram.com/alto.again/p/Dd8_YspmoQb/",
+        "rights": "Publicly accessible reference photo; redistribution permission not established",
+        "originalFile": ".tmp/20261005-venue-research/alto-bar-interior.jpg",
+        "focal": "50% 72%",
+        "src": "assets/alto-1200.webp",
+        "small": "assets/alto-600.webp"
+      },
+      "priceGuide": "A current itemized menu and prices were not available in the public sources checked. Ask the bar for its current cocktail list.",
+      "mapUrl": "https://www.google.com/maps/place/Alto+Bar/data=!4m2!3m1!1s0x0:0xd25a1691e5d8be03",
+      "menuUrl": "https://www.instagram.com/alto.again/",
+      "bookingUrl": "",
+      "instagramUrl": "https://www.instagram.com/alto.again/",
+      "publicNotes": [
+        "Walk-ins only, according to the official Instagram profile.",
+        "In soft opening as of October 5, 2026."
+      ],
+      "checkedAt": "2026-10-05"
     }
   ],
   "sources": [
@@ -2186,6 +2395,43 @@ window.POWS_TABLE = {
       "url": "https://www.instagram.com/monobeefbar/",
       "kind": "official",
       "checkedAt": "2026-09-22"
+    },
+    {
+      "id": "underbelly-michelin",
+      "title": "The Underbelly: MICHELIN Guide listing",
+      "url": "https://guide.michelin.com/en/metro-manila/makati-city_2329358/restaurant/the-underbelly",
+      "kind": "guide",
+      "checkedAt": "2026-10-05"
+    },
+    {
+      "id": "underbelly-primer",
+      "title": "The Underbelly: Philippine Primer feature, September 3, 2026",
+      "url": "https://primer.com.ph/food/cuisines/japanese/the-underbelly/",
+      "kind": "publisher",
+      "checkedAt": "2026-10-05"
+    },
+    {
+      "id": "alto-bar-instagram",
+      "title": "Alto Bar: official Instagram, hours and walk-in policy",
+      "url": "https://www.instagram.com/alto.again/",
+      "kind": "official",
+      "checkedAt": "2026-10-05"
+    },
+    {
+      "id": "alto-bar-maps",
+      "title": "Alto Bar: Google business listing, Karrivin address and phone",
+      "url": "https://www.google.com/maps/place/Alto+Bar/data=!4m2!3m1!1s0x0:0xd25a1691e5d8be03",
+      "kind": "listing",
+      "checkedAt": "2026-10-05"
+    }
+  ],
+  "savedListUpdates": [
+    {
+      "id": "20261005-visited-underbelly-alto",
+      "been": [
+        "underbelly",
+        "alto"
+      ]
     }
   ]
 };
